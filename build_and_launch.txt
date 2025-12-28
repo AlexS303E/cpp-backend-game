@@ -1,0 +1,5 @@
+conan install .. -s build_type=Debug -s compiler.runtime=MDd --build missing
+cmake ..
+cmake --build . --config Debug
+
+.\bin\game_server.exe --config-file ..\data\config.json --www-root ..\static

@@ -1,5 +1,0 @@
-conan install .. -s build_type=Debug -s compiler.runtime=MDd --build missing
-cmake ..
-cmake --build . --config Debug
-set GAME_DB_URL=postgres://postgres:postgres@localhost:5432/game
-.\bin\game_server.exe --config-file ..\data\config.json --www-root ..\static
